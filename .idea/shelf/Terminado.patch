@@ -1,0 +1,608 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision 26a88e8df5d88db963ac25410af4d021152ab295)
++++ .idea/misc.xml	(revision )
+@@ -1,5 +1,32 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="EntryPointsManager">
++    <entry_points version="2.0" />
++  </component>
++  <component name="NullableNotNullManager">
++    <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
++    <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />
++    <option name="myNullables">
++      <value>
++        <list size="4">
++          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
++          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
++          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
++          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
++        </list>
++      </value>
++    </option>
++    <option name="myNotNulls">
++      <value>
++        <list size="4">
++          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
++          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
++          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
++          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
++        </list>
++      </value>
++    </option>
++  </component>
+   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+     <OptionsSetting value="true" id="Add" />
+     <OptionsSetting value="true" id="Remove" />
+\ No newline at end of file
+Index: .idea/codeStyleSettings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/codeStyleSettings.xml	(revision )
++++ .idea/codeStyleSettings.xml	(revision )
+@@ -0,0 +1,229 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectCodeStyleSettingsManager">
++    <option name="PER_PROJECT_SETTINGS">
++      <value>
++        <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="99" />
++        <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="99" />
++        <option name="PACKAGES_TO_USE_IMPORT_ON_DEMAND">
++          <value />
++        </option>
++        <option name="IMPORT_LAYOUT_TABLE">
++          <value>
++            <package name="android" withSubpackages="true" static="false" />
++            <emptyLine />
++            <package name="com" withSubpackages="true" static="false" />
++            <emptyLine />
++            <package name="junit" withSubpackages="true" static="false" />
++            <emptyLine />
++            <package name="net" withSubpackages="true" static="false" />
++            <emptyLine />
++            <package name="org" withSubpackages="true" static="false" />
++            <emptyLine />
++            <package name="java" withSubpackages="true" static="false" />
++            <emptyLine />
++            <package name="javax" withSubpackages="true" static="false" />
++            <emptyLine />
++            <package name="" withSubpackages="true" static="false" />
++            <emptyLine />
++            <package name="" withSubpackages="true" static="true" />
++            <emptyLine />
++          </value>
++        </option>
++        <option name="RIGHT_MARGIN" value="100" />
++        <AndroidXmlCodeStyleSettings>
++          <option name="USE_CUSTOM_SETTINGS" value="true" />
++        </AndroidXmlCodeStyleSettings>
++        <Objective-C-extensions>
++          <option name="GENERATE_INSTANCE_VARIABLES_FOR_PROPERTIES" value="ASK" />
++          <option name="RELEASE_STYLE" value="IVAR" />
++          <option name="TYPE_QUALIFIERS_PLACEMENT" value="BEFORE" />
++          <file>
++            <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Import" />
++            <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Macro" />
++            <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Typedef" />
++            <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Enum" />
++            <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Constant" />
++            <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Global" />
++            <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Struct" />
++            <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="FunctionPredecl" />
++            <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Function" />
++          </file>
++          <class>
++            <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Property" />
++            <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Synthesize" />
++            <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="InitMethod" />
++            <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="StaticMethod" />
++            <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="InstanceMethod" />
++            <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="DeallocMethod" />
++          </class>
++          <extensions>
++            <pair source="cpp" header="h" />
++            <pair source="c" header="h" />
++          </extensions>
++        </Objective-C-extensions>
++        <XML>
++          <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
++        </XML>
++        <codeStyleSettings language="XML">
++          <option name="FORCE_REARRANGE_MODE" value="1" />
++          <indentOptions>
++            <option name="CONTINUATION_INDENT_SIZE" value="4" />
++          </indentOptions>
++          <arrangement>
++            <rules>
++              <section>
++                <rule>
++                  <match>
++                    <AND>
++                      <NAME>xmlns:android</NAME>
++                      <XML_NAMESPACE>Namespace:</XML_NAMESPACE>
++                    </AND>
++                  </match>
++                </rule>
++              </section>
++              <section>
++                <rule>
++                  <match>
++                    <AND>
++                      <NAME>xmlns:.*</NAME>
++                      <XML_NAMESPACE>Namespace:</XML_NAMESPACE>
++                    </AND>
++                  </match>
++                  <order>BY_NAME</order>
++                </rule>
++              </section>
++              <section>
++                <rule>
++                  <match>
++                    <AND>
++                      <NAME>.*:id</NAME>
++                      <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
++                    </AND>
++                  </match>
++                </rule>
++              </section>
++              <section>
++                <rule>
++                  <match>
++                    <AND>
++                      <NAME>.*:name</NAME>
++                      <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
++                    </AND>
++                  </match>
++                </rule>
++              </section>
++              <section>
++                <rule>
++                  <match>
++                    <AND>
++                      <NAME>name</NAME>
++                      <XML_NAMESPACE>^$</XML_NAMESPACE>
++                    </AND>
++                  </match>
++                </rule>
++              </section>
++              <section>
++                <rule>
++                  <match>
++                    <AND>
++                      <NAME>style</NAME>
++                      <XML_NAMESPACE>^$</XML_NAMESPACE>
++                    </AND>
++                  </match>
++                </rule>
++              </section>
++              <section>
++                <rule>
++                  <match>
++                    <AND>
++                      <NAME>.*</NAME>
++                      <XML_NAMESPACE>^$</XML_NAMESPACE>
++                    </AND>
++                  </match>
++                  <order>BY_NAME</order>
++                </rule>
++              </section>
++              <section>
++                <rule>
++                  <match>
++                    <AND>
++                      <NAME>.*:layout_width</NAME>
++                      <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
++                    </AND>
++                  </match>
++                </rule>
++              </section>
++              <section>
++                <rule>
++                  <match>
++                    <AND>
++                      <NAME>.*:layout_height</NAME>
++                      <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
++                    </AND>
++                  </match>
++                </rule>
++              </section>
++              <section>
++                <rule>
++                  <match>
++                    <AND>
++                      <NAME>.*:layout_.*</NAME>
++                      <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
++                    </AND>
++                  </match>
++                  <order>BY_NAME</order>
++                </rule>
++              </section>
++              <section>
++                <rule>
++                  <match>
++                    <AND>
++                      <NAME>.*:width</NAME>
++                      <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
++                    </AND>
++                  </match>
++                  <order>BY_NAME</order>
++                </rule>
++              </section>
++              <section>
++                <rule>
++                  <match>
++                    <AND>
++                      <NAME>.*:height</NAME>
++                      <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
++                    </AND>
++                  </match>
++                  <order>BY_NAME</order>
++                </rule>
++              </section>
++              <section>
++                <rule>
++                  <match>
++                    <AND>
++                      <NAME>.*</NAME>
++                      <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
++                    </AND>
++                  </match>
++                  <order>BY_NAME</order>
++                </rule>
++              </section>
++              <section>
++                <rule>
++                  <match>
++                    <AND>
++                      <NAME>.*</NAME>
++                      <XML_NAMESPACE>.*</XML_NAMESPACE>
++                    </AND>
++                  </match>
++                  <order>BY_NAME</order>
++                </rule>
++              </section>
++            </rules>
++          </arrangement>
++        </codeStyleSettings>
++      </value>
++    </option>
++    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default (1)" />
++  </component>
++</project>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_quiz.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_quiz.xml	(revision 26a88e8df5d88db963ac25410af4d021152ab295)
++++ app/src/main/res/layout/activity_quiz.xml	(revision )
+@@ -17,9 +17,4 @@
+ 
+     <include layout="@layout/content_quiz" />
+ 
+-    <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
+-        android:layout_width="wrap_content" android:layout_height="wrap_content"
+-        android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
+-        android:src="@android:drawable/ic_dialog_email" />
+-
+ </android.support.design.widget.CoordinatorLayout>
+Index: app/src/main/res/layout/content_quiz.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/content_quiz.xml	(revision 26a88e8df5d88db963ac25410af4d021152ab295)
++++ app/src/main/res/layout/content_quiz.xml	(revision )
+@@ -1,14 +1,60 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+-    android:layout_height="match_parent" android:paddingBottom="@dimen/activity_vertical_margin"
+-    android:paddingLeft="@dimen/activity_horizontal_margin"
+-    android:paddingRight="@dimen/activity_horizontal_margin"
+-    android:paddingTop="@dimen/activity_vertical_margin"
+-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+-    tools:context="lucom.geoquiz.QuizActivity" tools:showIn="@layout/activity_quiz">
++<LinearLayout
++    xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:orientation="vertical"
++    android:gravity="center">
+ 
+-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+-        android:text="Hello World!" />
+-</RelativeLayout>
++    <TextView
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:id="@+id/txt_Quiz_pregunta" />
++
++    <LinearLayout
++        android:orientation="horizontal"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content">
++
++        <LinearLayout
++            android:orientation="vertical"
++            android:layout_width="wrap_content"
++            android:layout_height="match_parent">
++
++            <Button
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="@string/boton_verdadero"
++                android:id="@+id/boton_verdadero" />
++
++            <ImageButton
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:id="@+id/boton_anterior"
++                android:src="@drawable/arrow_left"
++                android:layout_gravity="right"
++                android:contentDescription="Pregunta anterior"/>
++        </LinearLayout>
++
++        <LinearLayout
++            android:orientation="vertical"
++            android:layout_width="wrap_content"
++            android:layout_height="match_parent">
++
++            <Button
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="@string/boton_falso"
++                android:id="@+id/boton_falso" />
++
++            <ImageButton
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:id="@+id/boton_siguiente"
++                android:src="@drawable/arrow_right"
++                android:contentDescription="Siguiente pregunta"/>
++        </LinearLayout>
++
++    </LinearLayout>
++
++</LinearLayout>
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(revision 26a88e8df5d88db963ac25410af4d021152ab295)
++++ app/src/main/res/values/strings.xml	(revision )
+@@ -1,4 +1,18 @@
+ <resources>
+     <string name="app_name">GeoQuiz</string>
+     <string name="action_settings">Settings</string>
++    <string name="question_text">Constantinopla es la ciudad más grande de Tuquia</string>
++    <string name="boton_verdadero">Verdadero</string>
++    <string name="boton_falso">Falso</string>
++    <string name="boton_siguiente">Siguiente</string>
++    <string name="boton_anterior">Anterior</string>
++    <string name="toast_correcto">¡Correcto!</string>
++    <string name="toast_incorrecto">¡Incorrecto!</string>
++    <string name="pregunta_europa">España es más extenso que Alemania</string>
++    <string name="pregunta_oceanos">El océano Atalantico es el más grande del mundo</string>
++    <string name="pregunta_Africa">En río Nilo nace en Egipto</string>
++    <string name="pregunta_America">El Amazonas es el río más largo del mundo</string>
++    <string name="pregunta_Asia">La gran muralla china se ve desde el espacio</string>
++    <string name="pregunta_oceania">Australia fue utilizada como carcel britanica</string>
++    <string name="title_activity_main3">MainActivity3</string>
+ </resources>
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/AndroidManifest.xml	(revision 26a88e8df5d88db963ac25410af4d021152ab295)
++++ app/src/main/AndroidManifest.xml	(revision )
+@@ -1,14 +1,21 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="lucom.geoquiz">
++<manifest package="lucom.geoquiz"
++          xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+-    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher"
+-        android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/AppTheme">
+-        <activity android:name=".QuizActivity" android:label="@string/app_name"
++    <application
++        android:allowBackup="true"
++        android:icon="@mipmap/ic_launcher"
++        android:label="@string/app_name"
++        android:supportsRtl="true"
++        android:theme="@style/AppTheme">
++        <activity
++            android:name=".QuizActivity"
++            android:label="@string/app_name"
+             android:theme="@style/AppTheme.NoActionBar">
+             <intent-filter>
+-                <action android:name="android.intent.action.MAIN" />
++                <action android:name="android.intent.action.MAIN"/>
+ 
+-                <category android:name="android.intent.category.LAUNCHER" />
++                <category android:name="android.intent.category.LAUNCHER"/>
+             </intent-filter>
+         </activity>
+     </application>
+Index: app/src/main/res/values/styles.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/styles.xml	(revision 26a88e8df5d88db963ac25410af4d021152ab295)
++++ app/src/main/res/values/styles.xml	(revision )
+@@ -7,11 +7,14 @@
+         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+         <item name="colorAccent">@color/colorAccent</item>
+     </style>
++
+     <style name="AppTheme.NoActionBar">
+         <item name="windowActionBar">false</item>
+         <item name="windowNoTitle">true</item>
+     </style>
++
+-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
++    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
++
+-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
++    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+ 
+ </resources>
+Index: app/src/main/res/values-v21/styles.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-v21/styles.xml	(revision 26a88e8df5d88db963ac25410af4d021152ab295)
++++ app/src/main/res/values-v21/styles.xml	(revision )
+@@ -1,4 +1,5 @@
+ <resources>>
++
+     <style name="AppTheme.NoActionBar">
+         <item name="windowActionBar">false</item>
+         <item name="windowNoTitle">true</item>
+Index: app/src/main/java/lucom/geoquiz/QuizActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/lucom/geoquiz/QuizActivity.java	(revision 26a88e8df5d88db963ac25410af4d021152ab295)
++++ app/src/main/java/lucom/geoquiz/QuizActivity.java	(revision )
+@@ -8,45 +8,101 @@
+ import android.view.View;
+ import android.view.Menu;
+ import android.view.MenuItem;
++import android.widget.Button;
++import android.widget.ImageButton;
++import android.widget.TextView;
++import android.widget.Toast;
+ 
+ public class QuizActivity extends AppCompatActivity {
+ 
++    private Button mBotonVerdadero;
++    private Button mBotonFalso;
++    private ImageButton mBotonSiguiente;
++    private ImageButton mBotonAnterior;
++    private TextView mTextoPregunta;
++
++    private Pregunta mpreguntas[] = new Pregunta[]{
++            new Pregunta(R.string.pregunta_Africa, false),
++            new Pregunta(R.string.pregunta_America, false),
++            new Pregunta(R.string.pregunta_Asia, false),
++            new Pregunta(R.string.pregunta_europa, true),
++            new Pregunta(R.string.pregunta_oceania, true),
++            new Pregunta(R.string.pregunta_oceanos, false)
++    };
++
++    private int mPosicionPregunta = 0;
++
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_quiz);
+-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+-        setSupportActionBar(toolbar);
+ 
+-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+-        fab.setOnClickListener(new View.OnClickListener() {
++        mTextoPregunta = (TextView) findViewById(R.id.txt_Quiz_pregunta);
++        mTextoPregunta.setOnClickListener(new View.OnClickListener(){
++            public void onClick(View v) {
++                mPosicionPregunta = (mPosicionPregunta + 1) % mpreguntas.length;
++                actualizarPregunta();
++            }
++        });
++        actualizarPregunta();
++
++        mBotonVerdadero = (Button) findViewById(R.id.boton_verdadero);
++        mBotonVerdadero.setOnClickListener(new View.OnClickListener() {
+             @Override
+-            public void onClick(View view) {
+-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+-                        .setAction("Action", null).show();
++            public void onClick(View v) {
++                //Aquí su acción
++                comprobarPregunta(true);
+             }
+         });
++
++        mBotonFalso = (Button) findViewById(R.id.boton_falso);
++        mBotonFalso.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View v) {
++                //Aquí su acción
++                comprobarPregunta(false);
+-    }
++            }
++        });
+ 
++        mBotonSiguiente = (ImageButton) findViewById(R.id.boton_siguiente);
++        mBotonSiguiente.setOnClickListener(new View.OnClickListener() {
+-    @Override
++            @Override
+-    public boolean onCreateOptionsMenu(Menu menu) {
+-        // Inflate the menu; this adds items to the action bar if it is present.
+-        getMenuInflater().inflate(R.menu.menu_quiz, menu);
+-        return true;
++            public void onClick(View v) {
++                //Aquí su acción
++                mPosicionPregunta = (mPosicionPregunta + 1) % mpreguntas.length;
++                actualizarPregunta();
++
+-    }
++            }
++        });
+ 
++        mBotonAnterior = (ImageButton) findViewById(R.id.boton_anterior);
++        mBotonAnterior.setOnClickListener(new View.OnClickListener() {
+-    @Override
++            @Override
+-    public boolean onOptionsItemSelected(MenuItem item) {
+-        // Handle action bar item clicks here. The action bar will
+-        // automatically handle clicks on the Home/Up button, so long
+-        // as you specify a parent activity in AndroidManifest.xml.
+-        int id = item.getItemId();
++            public void onClick(View v) {
++                //Aquí su acción
++                if(mPosicionPregunta != 0){
++                    mPosicionPregunta = (mPosicionPregunta - 1) % mpreguntas.length;
++                    actualizarPregunta();
++                }
++            }
++        });
++    }
+ 
+-        //noinspection SimplifiableIfStatement
+-        if (id == R.id.action_settings) {
+-            return true;
++    private void actualizarPregunta(){
++        int pregunta = mpreguntas[mPosicionPregunta].getTextResId();
++        mTextoPregunta.setText(pregunta);
+-        }
++    }
+ 
+-        return super.onOptionsItemSelected(item);
++    private void comprobarPregunta(boolean presionadoPorUsuario){
++        boolean respuestaVerdadera = mpreguntas[mPosicionPregunta].isRespuestaVerdadera();
++
++        int mensajeResId = 0;
++
++        if(presionadoPorUsuario == respuestaVerdadera){
++            mensajeResId = R.string.toast_correcto;
++        } else {
++            mensajeResId = R.string.toast_incorrecto;
++        }
++        Toast.makeText(QuizActivity.this, mensajeResId, Toast.LENGTH_SHORT).show();
+     }
+ }
