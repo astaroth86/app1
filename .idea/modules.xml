@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file:///media/discoDatos/astaroth/AndroidStudioProjects/GeoQuiz/GeoQuiz.iml" filepath="/media/discoDatos/astaroth/AndroidStudioProjects/GeoQuiz/GeoQuiz.iml" />
       <module fileurl="file:///media/discoDatos/astaroth/AndroidStudioProjects/GeoQuiz/app/app.iml" filepath="/media/discoDatos/astaroth/AndroidStudioProjects/GeoQuiz/app/app.iml" />
+      <module fileurl="file:///media/discoDatos/astaroth/AndroidStudioProjects/app2/app2.iml" filepath="/media/discoDatos/astaroth/AndroidStudioProjects/app2/app2.iml" />
     </modules>
   </component>
 </project>

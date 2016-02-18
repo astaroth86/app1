@@ -9,8 +9,8 @@
         <option name="gradleJvm" value="1.7" />
         <option name="modules">
           <set>
-            <option value="/media/discoDatos/astaroth/AndroidStudioProjects/GeoQuiz" />
-            <option value="/media/discoDatos/astaroth/AndroidStudioProjects/GeoQuiz/app" />
+            <option value="/media/discoDatos/astaroth/AndroidStudioProjects/app2" />
+            <option value="/media/discoDatos/astaroth/AndroidStudioProjects/app2/app" />
           </set>
         </option>
       </GradleProjectSettings>
