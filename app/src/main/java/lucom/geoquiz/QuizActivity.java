@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class QuizActivity extends AppCompatActivity {
 
     private static final String TAG = "QuizActivity";
+    private static final String KEY_INDEX = "index";
 
     private Button mBotonVerdadero;
     private Button mBotonFalso;
@@ -34,7 +35,7 @@ public class QuizActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate(Bundle) called");
-        setContentView(R.layout.activity_quiz);
+        setContentView(R.layout.content_quiz);
 
         mTextoPregunta = (TextView) findViewById(R.id.txt_Quiz_pregunta);
         mTextoPregunta.setOnClickListener(new View.OnClickListener(){
@@ -85,6 +86,11 @@ public class QuizActivity extends AppCompatActivity {
                 }
             }
         });
+
+        if(savedInstanceState != null){
+            mPosicionPregunta = savedInstanceState.getInt(KEY_INDEX, 0);
+            actualizarPregunta();
+        }
     }
 
     private void actualizarPregunta(){
@@ -103,6 +109,13 @@ public class QuizActivity extends AppCompatActivity {
             mensajeResId = R.string.toast_incorrecto;
         }
         Toast.makeText(QuizActivity.this, mensajeResId, Toast.LENGTH_SHORT).show();
+    }
+
+    //Aquí metemos lo que queremos que se guarde cuando cambiamos la orientación de la pantalla
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState){
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt(KEY_INDEX, mPosicionPregunta);
     }
 
     @Override
