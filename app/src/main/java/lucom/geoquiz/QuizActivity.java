@@ -1,5 +1,7 @@
 package lucom.geoquiz;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -13,12 +15,14 @@ public class QuizActivity extends AppCompatActivity {
 
     private static final String TAG = "QuizActivity";
     private static final String KEY_INDEX = "index";
+    private static final int CODIGO_RESPUESTA_TRUCO = 0;
 
     private Button mBotonVerdadero;
     private Button mBotonFalso;
     private ImageButton mBotonSiguiente;
     private ImageButton mBotonAnterior;
     private TextView mTextoPregunta;
+    private Button mBotonTruco;
 
     private Pregunta mpreguntas[] = new Pregunta[]{
             new Pregunta(R.string.pregunta_Africa, false),
@@ -29,7 +33,8 @@ public class QuizActivity extends AppCompatActivity {
             new Pregunta(R.string.pregunta_oceanos, false)
     };
 
-    private int mPosicionPregunta = 2;
+    private int mPosicionPregunta = 0;
+    private boolean mEsTramposo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +60,23 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
+        mBotonTruco = (Button) findViewById(R.id.BTNTruco);
+        mBotonTruco.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Aquí su acción
+                //Inicio de la nueva Activity
+                //Intent i = new Intent(QuizActivity.this, TrucoActivity.class);
+                //Aquí iniciamos con extras
+                boolean preguntaEsCorrecta = mpreguntas[mPosicionPregunta].isRespuestaVerdadera();
+                Intent i = TrucoActivity.newIntent(QuizActivity.this, preguntaEsCorrecta);
+                //startActivity(i);
+                //Aquí iniciamos con respuesta de la otra activity
+                startActivityForResult(i, CODIGO_RESPUESTA_TRUCO);
+            }
+        });
+        actualizarPregunta();
+
         mBotonFalso = (Button) findViewById(R.id.boton_falso);
         mBotonFalso.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +92,7 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //Aquí su acción
                 mPosicionPregunta = (mPosicionPregunta + 1) % mpreguntas.length;
+                mEsTramposo = false;
                 actualizarPregunta();
 
             }
@@ -103,12 +126,31 @@ public class QuizActivity extends AppCompatActivity {
 
         int mensajeResId = 0;
 
-        if(presionadoPorUsuario == respuestaVerdadera){
-            mensajeResId = R.string.toast_correcto;
+        if(mEsTramposo){
+            mensajeResId = R.string.juicio_toast;
         } else {
-            mensajeResId = R.string.toast_incorrecto;
+            if(presionadoPorUsuario == respuestaVerdadera){
+                mensajeResId = R.string.toast_correcto;
+            } else {
+                mensajeResId = R.string.toast_incorrecto;
+            }
         }
+
         Toast.makeText(QuizActivity.this, mensajeResId, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onActivityResult(int codigoRespuesta, int codigoResultado, Intent data){
+        if(codigoResultado != Activity.RESULT_OK){
+            return;
+        }
+
+        if(codigoRespuesta == CODIGO_RESPUESTA_TRUCO){
+            if(data == null){
+                return;
+            }
+            mEsTramposo = TrucoActivity.fueLaRespuestaMostrada(data);
+        }
     }
 
     //Aquí metemos lo que queremos que se guarde cuando cambiamos la orientación de la pantalla

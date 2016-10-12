@@ -15,4 +15,8 @@
     <string name="pregunta_Asia">La gran muralla china se ve desde el espacio</string>
     <string name="pregunta_oceania">Australia fue utilizada como carcel britanica</string>
     <string name="title_activity_main3">MainActivity3</string>
+    <string name="texto_advertencia">¿Estás segur@ que quieres hacerlo?</string>
+    <string name="boton_mostrar_respuesta">Ver respuesta</string>
+    <string name="boton_truco">¡Trampa!</string>
+    <string name="juicio_toast">El truco es incorrecto.</string>
 </resources>
